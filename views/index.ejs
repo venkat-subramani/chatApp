@@ -34,8 +34,8 @@
  			<div class="col-md-6 col-sm-offset-1 panel panel-primary">
             <div class="panel-body">
                <div id="contentWrap" >
-                  <div id="chatWrap" style=" border-radius: 10px;
-                      background: #F0E0B0;background: url(/images/wood.jpg);min-height: 400;max-height: 400;overflow-y: scroll;">
+                  <div id="chatWrap" style=" border-radius: 10px;color: whitesmoke;
+                      background: #F0E0B0;background: url(/images/chat-bg.jpg);min-height: 400;max-height: 400;overflow-y: scroll;">
                       <div id="chat"></div>
                   </div>
                </div>
@@ -48,7 +48,7 @@
             <div  id="users"></div>
         </div>
       </div>
-        <h4 align="center">Invite your friends by sharing the <a target="_blank" href="https://awesome-socket-io.herokuapp.com/">link</a></h4>
+        <h4 align="center">Invite your friends by sharing the <a target="_blank" href="https://socket-io-chatting.herokuapp.com/">link</a></h4>
    </div>
  </div>
  <br/>
@@ -64,7 +64,7 @@
  </div>
 
  <div class="row">
-  <h1 align="center"><code>@harry  ciao</code> to say ciao to harry privately</h1>
+  <h1 align="center"><code>@username</code> to say hello to user privately</h1>
  </div>
 
 </div>
@@ -72,6 +72,18 @@
    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
    <script src="/socket.io/socket.io.js"></script>
    <script src="/js/bootstrap.js"></script>
+   
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-71844204-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 
    <script>
     jQuery(function($){
